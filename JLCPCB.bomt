@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BOMTemplate version="5">
+    <AlwaysQuoteRefs Type="bool" Value="false"/>
+    <AppendNotes Type="bool" Value="false"/>
+    <AsciiQuantityWidth Type="int" Value="5"/>
+    <AsciiRefWidth Type="int" Value="30"/>
+    <CSS Type="QString">
+
+/*_HDefault Style*/
+body
+{
+font-family: Arial; font-size: 12pt; text-align:left; margin: 5mm; paper-width: 595.0pt; paper-height: 842.0pt;
+}
+
+p /*_H Paragraph */ { font-size: 1.0em; margin-top: 1pt; margin-bottom: 1pt; margin-left: 0pt; margin-right: 0pt; }
+div /*_H */ { font-size: 1.0em; margin-top: 1pt; margin-bottom: 1pt; }
+lp /*_H List Paragraph */ { font-family: Times; font-size: 1.0em; }
+
+/*The main title of the BOM*/
+h1.mainTitle
+{ 
+    color:#000099;
+	font-family:Arial;
+	font-size:16pt;
+	font-style:normal;
+	font-weight:bold;
+	margin-bottom:8pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:7pt;
+	text-decoration:underline;
+}
+ 
+/*Header table*/
+table.headerTable 
+{
+	cell-padding:0pt;
+	cell-spacing:0pt;
+	margin-bottom:1pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:7pt;
+}
+
+/*Header table titles*/
+p.headerTitle
+{   
+	color:#000000;
+	font-family:Arial;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:bold;
+	margin-bottom:2pt;
+	margin-left:2pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+/*Header table values*/
+p.headerValue
+{ 
+	color:#000000;
+	font-family:Arial;
+	font-size:11pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+
+/*Notes title*/
+h3.NotesTitle
+{
+	color:#000000;
+	font-family:Arial;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:bold;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:10pt;
+	text-decoration:none;
+}
+/*Notes*/
+p.bomNotes
+{
+	color:#000000;
+	font-family:Arial;
+	font-size:11pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+
+/*Document Header*/
+p.DocHeader
+{
+	color:#000000;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+
+/*Document Footer*/
+p.DocFooter
+{
+	color:#000000;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+ 
+/*Main BOM table*/
+table.categoriesTable
+{   
+	cell-padding:0pt;
+	cell-spacing:0pt;
+	line-height:100%;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:1pt;
+	width:100%;
+}
+ 
+/*Section title*/
+p.sectionTitle
+{ 
+	background-color:#efefff;
+	border-style:none;
+	color:#000099;
+	font-family:Arial;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:normal;
+	line-height:100%;
+	margin-bottom:1pt;
+	margin-left:0pt;
+	margin-right:1pt;
+	margin-top:7pt;
+	padding-bottom:1pt;
+	padding-left:2pt;
+	padding-right:0pt;
+	padding-top:1pt;
+	text-decoration:none;
+}
+
+/*Main table odd row entry*/
+p.oddfield
+{ 
+	border-style:none;
+	color:#000000;
+	font-family:Arial;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	line-height:100%;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:0pt;
+	padding-bottom:2pt;
+	padding-left:4pt;
+	padding-right:3pt;
+	padding-top:1pt;
+	text-decoration:none;
+	vertical-align:top;
+}
+/*Main table even row entry*/
+p.evenfield
+{ 
+	background-color:#f0f0fe;
+	border-style:none;
+	color:#000000;
+	font-family:Arial;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	line-height:100%;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:0pt;
+	padding-bottom:2pt;
+	padding-left:4pt;
+	padding-right:3pt;
+	padding-top:1pt;
+	text-decoration:none;
+	vertical-align:top;
+}
+/*Field heading*/
+p.fieldHeading
+{ 
+	color:#000099;
+	font-family:Arial;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:underline;
+} 
+/*Sub-totals*/ 
+p.subtotal
+{ 
+ 	color:#000099;
+	font-family:Arial;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+/*Totals*/
+p.total
+{ 
+	border-style:none;
+	color:#000099;
+	font-family:Arial;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	line-height:100%;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:2pt;
+	text-decoration:none;
+}
+ 
+/*Links*/
+a
+{
+    text-decoration: underline;
+}
+
+/*Timestamp*/ 
+p.timestamp
+{   
+	color:#000000;
+	font-family:Arial;
+	font-size:9pt;
+	font-style:italic;
+	font-weight:normal;
+	margin-bottom:2pt;
+	margin-left:4pt;
+	margin-right:4pt;
+	margin-top:10pt;
+	text-align:right;
+	text-decoration:none;
+} 
+
+p.horizLine  /*Line shown above the grand total */
+{ 
+    border-bottom-width: 1pt;
+    border-bottom-style: solid;
+    border-color: #000099;
+    margin-bottom:8pt;
+	margin-left:4pt;
+	margin-right:2pt;
+	margin-top:0pt;
+}</CSS>
+    <CaseSensitiveGrouping Type="bool" Value="true"/>
+    <DocumentFooter Type="QString"></DocumentFooter>
+    <DocumentHeader Type="QString"></DocumentHeader>
+    <ExcludeValueField Type="bool" Value="false"/>
+    <ManualPrettyLayout Type="bool" Value="false"/>
+    <PageFooter Type="QString"></PageFooter>
+    <PageHeader Type="QString"></PageHeader>
+    <PrettyQuantityWidth Type="int" Value="7"/>
+    <PrettyRefWidth Type="int" Value="15"/>
+    <categories Type="QVariantList">
+        <Element>
+            <heading Type="QString">Modules</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">M</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Capacitors</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">C</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Resistors</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">R</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Integrated Circuits</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">U</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Transistors</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">Q</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Diodes</heading>
+            <isMiscCategory Type="bool" Value="false"/>
+            <references Type="QStringList">
+                <Element Type="QString">D</Element>
+            </references>
+        </Element>
+        <Element>
+            <heading Type="QString">Miscellaneous</heading>
+            <isMiscCategory Type="bool" Value="true"/>
+            <references Type="QStringList">
+                <Element Type="QString">*</Element>
+            </references>
+        </Element>
+    </categories>
+    <fields Type="QVariantList">
+        <Element>
+            <applyToEmpty Type="bool" Value="false"/>
+            <asciiWidth Type="int" Value="16"/>
+            <enableLinks Type="bool" Value="false"/>
+            <fieldLines Type="int" Value="0"/>
+            <fieldName Type="QString">Value</fieldName>
+            <fieldWidth Type="int" Value="0"/>
+            <generateTotals Type="bool" Value="false"/>
+            <manualWidth Type="int" Value="12"/>
+            <precision Type="int" Value="0"/>
+            <prefix Type="QString"></prefix>
+            <propertyName Type="QString">VALUE</propertyName>
+            <suffix Type="QString"></suffix>
+        </Element>
+        <Element>
+            <applyToEmpty Type="bool" Value="false"/>
+            <asciiWidth Type="int" Value="16"/>
+            <enableLinks Type="bool" Value="false"/>
+            <fieldLines Type="int" Value="0"/>
+            <fieldName Type="QString">LCSC Part #</fieldName>
+            <fieldWidth Type="int" Value="3"/>
+            <generateTotals Type="bool" Value="false"/>
+            <manualWidth Type="int" Value="12"/>
+            <precision Type="int" Value="0"/>
+            <prefix Type="QString"></prefix>
+            <propertyName Type="QString">LCSC</propertyName>
+            <suffix Type="QString"></suffix>
+        </Element>
+        <Element>
+            <applyToEmpty Type="bool" Value="false"/>
+            <asciiWidth Type="int" Value="16"/>
+            <enableLinks Type="bool" Value="false"/>
+            <fieldLines Type="int" Value="0"/>
+            <fieldName Type="QString">Footprint</fieldName>
+            <fieldWidth Type="int" Value="3"/>
+            <generateTotals Type="bool" Value="false"/>
+            <manualWidth Type="int" Value="12"/>
+            <precision Type="int" Value="0"/>
+            <prefix Type="QString"></prefix>
+            <propertyName Type="QString">PACKAGE</propertyName>
+            <suffix Type="QString"></suffix>
+        </Element>
+    </fields>
+    <fullTextOuputs Type="bool" Value="false"/>
+    <groupReferences Type="bool" Value="true"/>
+    <suppressEmptyCategories Type="bool" Value="false"/>
+</BOMTemplate>
