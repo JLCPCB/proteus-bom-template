@@ -388,6 +388,6 @@ p.horizLine  /*Line shown above the grand total */
         </Element>
     </fields>
     <fullTextOuputs Type="bool" Value="false"/>
-    <groupReferences Type="bool" Value="true"/>
+    <groupReferences Type="bool" Value="false"/>
     <suppressEmptyCategories Type="bool" Value="false"/>
 </BOMTemplate>
